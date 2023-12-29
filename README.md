@@ -64,3 +64,29 @@ Solution:
     23: Hello World!
     24: Hello World!
     ```
+
+
+# TODO
+
+Todo/next steps (not necessarily in this order): 
+
+1. [ ] Get the device to blink some LEDs at fixed intervals too.
+1. [ ] Study and configure the clocks. 
+1. [ ] Obtain high-resolution timestamps via the core timer.
+1. [ ] Study and configure some interrupts and ISRs. 
+1. [ ] Study and configure the timers/counters, and use them for: 
+    1. [ ] PWM
+    1. [ ] Input capture
+    1. [ ] Output compare
+    1. [ ] driving servos
+1. [ ] Study and configure some DMA.
+1. [ ] Add C++. 
+1. [ ] Configure the build flags; ex: `-std=gnu++20`, `-Wall -Wextra -Werror`, etc.
+1. [ ] Add FreeRTOS. 
+1. [ ] Add an interactive CLI over serial. 
+1. [ ] Improve the UART control to be more like Arduino, except do it better by overwriting the `printf()` function. All prints will be passed to a buffer, and a UART ISR will continually send what's in the buffer, just like in Arduino. If the buffer is full, `printf()` will block until the data is all printed, just like Arduino. 
+1. [ ] Add an interactive CLI over telnet over Ethernet. 
+1. [ ] Add a web server and have it host a web page.
+1. [ ] Add Arduino-like libraries and functions. 
+1. [ ] Add a `Makefile` to build from the command line. See: https://github.com/brunoleppe/PIC32-Project-Template
+1. [ ] Build it using a custom-compiled XC32 compiler. See: https://github.com/ElectricRCAircraftGuy/Microchip_XC32_Compiler
