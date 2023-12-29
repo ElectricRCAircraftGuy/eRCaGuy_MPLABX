@@ -4,7 +4,8 @@
 1. YouTube - Create Your First Project with PIC32MZ EF using MPLAB® Harmony v3 - https://www.youtube.com/watch?v=sW-yS2FHI54
 1. https://www.microchip.com/en-us/tools-resources/configure/mplab-harmony
     1. Creating a "Hello World" Application on SAM Microcontrollers Using MPLAB Harmony Configurator (MHC) - http://ww1.microchip.com/downloads/en/DeviceDoc/Creating_Hello_World_%20Application_on_SAM_Using_MHC_DS90003231A.pdf
-1. 
+1. Some of my datasheets here: https://github.com/ElectricRCAircraftGuy/eRCaGuy_Engineering/tree/main/Datasheets/Microchip
+    1. Starter kit: https://github.com/ElectricRCAircraftGuy/eRCaGuy_Engineering/tree/main/Datasheets/Microchip/PIC32MZ2048EFM144/embedded_starter_kit
 
 Using this dev kit: https://www.microchip.com/en-us/development-tool/dm320007-c, the `eRCaGuy_MPLABX/harmony_projects/firmware/harmony_test1.X` project works! 
 
