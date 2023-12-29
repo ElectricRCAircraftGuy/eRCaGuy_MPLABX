@@ -1,0 +1,9 @@
+
+# MPLAB X Generated Project Files
+.generated_files/
+build/
+dist/
+**/nbproject/Makefile-*
+**/nbproject/Package-*
+**/nbproject/private/
+private/
