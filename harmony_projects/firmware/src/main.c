@@ -35,6 +35,37 @@
 // Section: Main Entry Point
 // *****************************************************************************
 // *****************************************************************************
+/*
+
+GS notes
+
+Board:
+1. The dev kit is "PIC32MZ EF Starter Kit with Crypto Engine" DM320007-C
+    1. https://www.microchip.com/en-us/development-tool/dm320007-c 
+    1. Mouser - https://mou.sr/41nGuBJ
+    1. DigiKey - https://www.digikey.com/short/009p3pbq 
+1. The debugger is "MPLAB PICKIT5 in-circuit debugger"
+    1. https://www.microchip.com/en-us/development-tool/PG164150 
+    1. Mouser - https://mou.sr/3uVoHpE 
+    1. DigiKey - https://www.digikey.com/short/m0db14nd 
+1. And the "PICKIT5 target adapter" (so nobody needs to make a cable)
+    1. https://www.microchip.com/en-us/development-tool/ac102015 
+    1. Mouser - https://mou.sr/47VxPJo
+    1. DigiKey - https://www.digikey.com/short/mv259545
+
+References:
+1. [Starter Guide] PIC32MZ Embedded Connectivity with Floating Point Unit (EF) Starter Kit User’s Guide:
+   https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/UserGuides/70005230B.pdf
+
+Pinout:
+See Starter Guide p20: J12 conections. 
+1. J12 pin 6 (GND)      --> UART GND
+1. J12 pin 8 (UART6 Tx) --> UART Rx
+
+Baud rate: 115200
+
+*/
+
 
 // 1 second is 50M clock cycles, so 1 us is 50 clock cycles
 // TODO: read the clock speed from the device somehow and use this to calculate the clock cycles per
@@ -107,7 +138,23 @@ int main (void)
 }
 
 
+
 /*******************************************************************************
  End of File
 */
 
+/*
+EXAMPLE OUTPUT:
+
+1639: Hello World!
+1640: Hello World!
+1641: Hello World!
+1642: Hello World!
+1643: Hello World!
+1644: Hello World!
+1645: Hello World!
+1646: Hello World!
+1647: Hello World!
+1648: Hello World!
+1649: Hello World!
+*/
