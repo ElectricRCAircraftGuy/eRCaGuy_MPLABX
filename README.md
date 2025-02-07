@@ -2,6 +2,9 @@
 # References
 
 1. YouTube - Create Your First Project with PIC32MZ EF using MPLAB® Harmony v3 - https://www.youtube.com/watch?v=sW-yS2FHI54
+    Potential new videos to look at (posted as replies to [my comment](https://www.youtube.com/watch?v=sW-yS2FHI54&lc=UgxTfjXbYMmejhx1Hb54AaABAg)): 
+    1. https://www.youtube.com/watch?v=sW-yS2FHI54
+    1. https://www.youtube.com/watch?v=Z-8srAI8jow
 1. https://www.microchip.com/en-us/tools-resources/configure/mplab-harmony
     1. Creating a "Hello World" Application on SAM Microcontrollers Using MPLAB Harmony Configurator (MHC) - http://ww1.microchip.com/downloads/en/DeviceDoc/Creating_Hello_World_%20Application_on_SAM_Using_MHC_DS90003231A.pdf
 1. Some of my datasheets here: https://github.com/ElectricRCAircraftGuy/eRCaGuy_Engineering/tree/main/Datasheets/Microchip
@@ -27,7 +30,18 @@ Solution:
 
 1. Then follow the steps in the video above (more or less--they don't match quite right).
 
-    Under pin settings, the UART pin should be pin 14: RG6: set it to `U6TX`. 
+    In the "Project Graph" tab --> click the "Plugins" dropdown menu near the top --> select "Pin Configuration". This opens up 3 new tabs: 
+    1. Pin Settings
+    1. Pin Table
+    1. Pin Diagram
+
+    In the "Pin Settings" tab, find Pin Number 14, Pin ID `RG6`, and change its "Function" dropdown setting from "Available" to `U6TX`. This is what assigns that `RG6` pin `14`, which is J12 pin `8` on the development board, to the UART6 TX function.
+
+    In the "Resource Management (MCC)" tab in the far top-left (near the normal "Projects" and "Files" tabs), under the "Project Resources" tab section, click the "Generate" button. This will generate the source code for you.
+    
+    When done, close the code configurator: Tools --> Embedded --> "MPLAB Code Configurator v5: Open/Close".
+
+    Note: the tool is bad and freezes a lot when trying to open or close it. 
 
     Connect a USB serial UART ("console cable") to the dev kit, and connect it to your computer. Refer to DS70005230B, the start kit User's Guide, Table 2-3 p20. 
 
