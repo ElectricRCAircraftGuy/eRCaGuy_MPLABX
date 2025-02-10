@@ -1,10 +1,17 @@
 
+
 # References
+
+1. [How to Set up the Tools Required to Get Started with MPLAB® Harmony v3 and MCC](https://www.youtube.com/watch?v=0rNFSlsVwVw)
+1. [Create Your First Project with PIC32MZ EF Using MPLAB® Harmony v3 and MCC](https://www.youtube.com/watch?v=Z-8srAI8jow)
+    1. [CURIOSITY PIC32MZ EF 2.0 DEVELOPMENT BOARD](https://www.microchip.com/en-us/development-tool/dm320209)
+
+
+## Specific references for the instructions below
 
 1. YouTube - Create Your First Project with PIC32MZ EF using MPLAB® Harmony v3 - https://www.youtube.com/watch?v=sW-yS2FHI54
     Potential new videos to look at (posted as replies to [my comment](https://www.youtube.com/watch?v=sW-yS2FHI54&lc=UgxTfjXbYMmejhx1Hb54AaABAg)): 
-    1. https://www.youtube.com/watch?v=sW-yS2FHI54
-    1. https://www.youtube.com/watch?v=Z-8srAI8jow
+    1. [NEW VIDEO!] https://www.youtube.com/watch?v=Z-8srAI8jow
 1. https://www.microchip.com/en-us/tools-resources/configure/mplab-harmony
     1. Creating a "Hello World" Application on SAM Microcontrollers Using MPLAB Harmony Configurator (MHC) - http://ww1.microchip.com/downloads/en/DeviceDoc/Creating_Hello_World_%20Application_on_SAM_Using_MHC_DS90003231A.pdf
 1. Some of my datasheets here: https://github.com/ElectricRCAircraftGuy/eRCaGuy_Engineering/tree/main/Datasheets/Microchip
@@ -41,7 +48,7 @@ Solution:
     
     When done, close the code configurator: Tools --> Embedded --> "MPLAB Code Configurator v5: Open/Close".
 
-    Note: the tool is bad and freezes a lot when trying to open or close it. 
+    _Note:_ the tool is bad and freezes a lot when trying to open or close it. If this happens, type `xkill` in a new terminal window, then click on the MPLAB X IDE window to kill the frozen process.
 
     Connect a USB serial UART ("console cable") to the dev kit, and connect it to your computer. Refer to DS70005230B, the start kit User's Guide, Table 2-3 p20. 
 
