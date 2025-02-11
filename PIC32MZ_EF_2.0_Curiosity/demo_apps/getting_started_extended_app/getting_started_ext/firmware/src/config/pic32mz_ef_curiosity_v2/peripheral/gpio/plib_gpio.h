@@ -62,14 +62,56 @@
 // *****************************************************************************
 
 
-/*** Macros for GPIO_RJ4 pin ***/
-#define GPIO_RJ4_Set()               (LATJSET = (1U<<4))
-#define GPIO_RJ4_Clear()             (LATJCLR = (1U<<4))
-#define GPIO_RJ4_Toggle()            (LATJINV= (1U<<4))
-#define GPIO_RJ4_OutputEnable()      (TRISJCLR = (1U<<4))
-#define GPIO_RJ4_InputEnable()       (TRISJSET = (1U<<4))
-#define GPIO_RJ4_Get()               ((PORTJ >> 4) & 0x1U)
-#define GPIO_RJ4_PIN                  GPIO_PIN_RJ4
+/*** Macros for LED3 pin ***/
+#define LED3_Set()               (LATJSET = (1U<<3))
+#define LED3_Clear()             (LATJCLR = (1U<<3))
+#define LED3_Toggle()            (LATJINV= (1U<<3))
+#define LED3_OutputEnable()      (TRISJCLR = (1U<<3))
+#define LED3_InputEnable()       (TRISJSET = (1U<<3))
+#define LED3_Get()               ((PORTJ >> 3) & 0x1U)
+#define LED3_PIN                  GPIO_PIN_RJ3
+
+/*** Macros for SW1 pin ***/
+#define SW1_Set()               (LATJSET = (1U<<4))
+#define SW1_Clear()             (LATJCLR = (1U<<4))
+#define SW1_Toggle()            (LATJINV= (1U<<4))
+#define SW1_OutputEnable()      (TRISJCLR = (1U<<4))
+#define SW1_InputEnable()       (TRISJSET = (1U<<4))
+#define SW1_Get()               ((PORTJ >> 4) & 0x1U)
+#define SW1_PIN                  GPIO_PIN_RJ4
+#define SW1_InterruptEnable()   (CNENJSET = (1U<<4))
+#define SW1_InterruptDisable()  (CNENJCLR = (1U<<4))
+
+/*** Macros for SW2 pin ***/
+#define SW2_Set()               (LATJSET = (1U<<5))
+#define SW2_Clear()             (LATJCLR = (1U<<5))
+#define SW2_Toggle()            (LATJINV= (1U<<5))
+#define SW2_OutputEnable()      (TRISJCLR = (1U<<5))
+#define SW2_InputEnable()       (TRISJSET = (1U<<5))
+#define SW2_Get()               ((PORTJ >> 5) & 0x1U)
+#define SW2_PIN                  GPIO_PIN_RJ5
+#define SW2_InterruptEnable()   (CNENJSET = (1U<<5))
+#define SW2_InterruptDisable()  (CNENJCLR = (1U<<5))
+
+/*** Macros for SW3 pin ***/
+#define SW3_Set()               (LATJSET = (1U<<6))
+#define SW3_Clear()             (LATJCLR = (1U<<6))
+#define SW3_Toggle()            (LATJINV= (1U<<6))
+#define SW3_OutputEnable()      (TRISJCLR = (1U<<6))
+#define SW3_InputEnable()       (TRISJSET = (1U<<6))
+#define SW3_Get()               ((PORTJ >> 6) & 0x1U)
+#define SW3_PIN                  GPIO_PIN_RJ6
+#define SW3_InterruptEnable()   (CNENJSET = (1U<<6))
+#define SW3_InterruptDisable()  (CNENJCLR = (1U<<6))
+
+/*** Macros for LED1 pin ***/
+#define LED1_Set()               (LATJSET = (1U<<7))
+#define LED1_Clear()             (LATJCLR = (1U<<7))
+#define LED1_Toggle()            (LATJINV= (1U<<7))
+#define LED1_OutputEnable()      (TRISJCLR = (1U<<7))
+#define LED1_InputEnable()       (TRISJSET = (1U<<7))
+#define LED1_Get()               ((PORTJ >> 7) & 0x1U)
+#define LED1_PIN                  GPIO_PIN_RJ7
 
 
 // *****************************************************************************
@@ -255,6 +297,7 @@ typedef enum
 
 typedef uint32_t GPIO_PIN;
 
+typedef  void (*GPIO_PIN_CALLBACK) ( GPIO_PIN pin, uintptr_t context);
 
 void GPIO_Initialize(void);
 
@@ -279,6 +322,29 @@ void GPIO_PortToggle(GPIO_PORT port, uint32_t mask);
 void GPIO_PortInputEnable(GPIO_PORT port, uint32_t mask);
 
 void GPIO_PortOutputEnable(GPIO_PORT port, uint32_t mask);
+
+void GPIO_PortInterruptEnable(GPIO_PORT port, uint32_t mask);
+
+void GPIO_PortInterruptDisable(GPIO_PORT port, uint32_t mask);
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: Local Data types and Prototypes
+// *****************************************************************************
+// *****************************************************************************
+
+typedef struct {
+
+    /* target pin */
+    GPIO_PIN                 pin;
+
+    /* Callback for event on target pin*/
+    GPIO_PIN_CALLBACK        callback;
+
+    /* Callback Context */
+    uintptr_t               context;
+
+} GPIO_PIN_CALLBACK_OBJ;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -327,6 +393,17 @@ static inline void GPIO_PinOutputEnable(GPIO_PIN pin)
     GPIO_PortOutputEnable((pin>>4U), (uint32_t)0x1U << (pin & 0xFU));
 }
 
+#define GPIO_PinInterruptEnable(pin)       GPIO_PinIntEnable(pin, GPIO_INTERRUPT_ON_MISMATCH)
+#define GPIO_PinInterruptDisable(pin)      GPIO_PinIntDisable(pin)
+
+void GPIO_PinIntEnable(GPIO_PIN pin, GPIO_INTERRUPT_STYLE style);
+void GPIO_PinIntDisable(GPIO_PIN pin);
+
+bool GPIO_PinInterruptCallbackRegister(
+    GPIO_PIN pin,
+    const   GPIO_PIN_CALLBACK callback,
+    uintptr_t context
+);
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility

@@ -2,12 +2,12 @@
 
 manifest_file_version: 1.0.0
 project: getting_started_ext_pic32mz_ef_curiosity_v2
-creation_date: 2025-02-11T15:02:08.645-07:00[America/Phoenix]
+creation_date: 2025-02-11T14:25:48.136-07:00[America/Phoenix]
 operating_system: Linux
 mcc_mode: IDE
 mcc_mode_version: v6.20
 device_name: PIC32MZ2048EFM144
-compiler: XC32 4.45
+compiler: XC32 4.30
 mcc_version: 5.5.0
 mcc_core_version: 5.7.0
 content_manager_version: 5.0.1

@@ -60,9 +60,8 @@
 void TIMER_1_InterruptHandler( void );
 void I2C1_BUS_InterruptHandler( void );
 void I2C1_MASTER_InterruptHandler( void );
-void UART6_FAULT_InterruptHandler( void );
-void UART6_RX_InterruptHandler( void );
-void UART6_TX_InterruptHandler( void );
+void CHANGE_NOTICE_J_InterruptHandler( void );
+void DMA0_InterruptHandler( void );
 
 
 

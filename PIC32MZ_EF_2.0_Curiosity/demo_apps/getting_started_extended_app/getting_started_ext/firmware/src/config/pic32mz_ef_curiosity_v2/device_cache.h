@@ -1,20 +1,24 @@
 /*******************************************************************************
-  UART6 PLIB
-
-  Company:
-    Microchip Technology Inc.
+  PIC32MZ L1 Cache Header
 
   File Name:
-    plib_uart6.h
+    device_cache.h
 
   Summary:
-    UART6 PLIB Header File
+    Preprocessor definitions to provide L1 Cache control.
 
   Description:
-    None
+    An MPLAB PLIB or Project can include this header to perform cache cleans,
+    invalidates etc. For the DCache and ICache.
+
+  Remarks:
+    This header should not define any prototypes or data definitions, or
+    include any files that do.  The file only provides macro definitions for
+    build-time.
 
 *******************************************************************************/
 
+// DOM-IGNORE-BEGIN
 /*******************************************************************************
 * Copyright (C) 2019 Microchip Technology Inc. and its subsidiaries.
 *
@@ -37,65 +41,52 @@
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
+// DOM-IGNORE-END
 
-#ifndef PLIB_UART6_H
-#define PLIB_UART6_H
+#ifndef DEVICE_CACHE_H
+#define DEVICE_CACHE_H
 
-#include <stddef.h>
-#include <stdbool.h>
-#include <stdint.h>
-#include "device.h"
-#include "plib_uart_common.h"
+// *****************************************************************************
+// *****************************************************************************
+// Section: Included Files
+// *****************************************************************************
+// *****************************************************************************
+/*  This section Includes other configuration headers necessary to completely
+    define this configuration.
+*/
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
 
-    extern "C" {
+extern "C" {
 
 #endif
 // DOM-IGNORE-END
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: Interface
+// Section: L1 Cache Configuration
 // *****************************************************************************
 // *****************************************************************************
+#define ICACHE_ENABLE()
+#define ICACHE_DISABLE()
+#define ICACHE_INVALIDATE()                            CACHE_InstructionCacheFlush()
+#define INSTRUCTION_CACHE_ENABLED                      true
 
-#define UART6_FrequencyGet()    (uint32_t)(100000000UL)
+#define DCACHE_ENABLE()
+#define DCACHE_DISABLE()
+#define DCACHE_CLEAN()
+#define DCACHE_CLEAN_INVALIDATE()
+#define DCACHE_INVALIDATE()                            CACHE_DataCacheFlush()
+#define DCACHE_CLEAN_BY_ADDR(addr,sz)                  CACHE_DataCacheClean(addr,sz)
+#define DCACHE_INVALIDATE_BY_ADDR(addr,sz)             CACHE_DataCacheInvalidate(addr,sz)
+#define DCACHE_CLEAN_INVALIDATE_BY_ADDR(addr,sz)       CACHE_DataCacheClean(addr,sz)
+#define DATA_CACHE_ENABLED                             true
 
-/****************************** UART6 API *********************************/
-
-void UART6_Initialize( void );
-
-bool UART6_SerialSetup( UART_SERIAL_SETUP *setup, uint32_t srcClkFreq );
-
-bool UART6_AutoBaudQuery( void );
-
-void UART6_AutoBaudSet( bool enable );
-
-bool UART6_Write( void *buffer, const size_t size );
-
-bool UART6_Read( void *buffer, const size_t size );
-
-UART_ERROR UART6_ErrorGet( void );
-
-int UART6_ReadByte( void );
-
-bool UART6_ReceiverIsReady( void );
-
-void UART6_WriteByte( int data );
-
-bool UART6_TransmitterIsReady( void );
-
-
-bool UART6_TransmitComplete( void );
-
-// DOM-IGNORE-BEGIN
-#ifdef __cplusplus  // Provide C++ Compatibility
-
-    }
-
+//DOM-IGNORE-BEGIN
+#ifdef __cplusplus
+}
 #endif
-// DOM-IGNORE-END
+//DOM-IGNORE-END
 
-#endif // PLIB_UART6_H
+#endif // #ifndef DEVICE_CACHE_H

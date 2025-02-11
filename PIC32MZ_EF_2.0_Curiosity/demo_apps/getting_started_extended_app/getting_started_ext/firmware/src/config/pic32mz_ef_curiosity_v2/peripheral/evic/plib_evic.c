@@ -59,9 +59,8 @@ void EVIC_Initialize( void )
     IPC1SET = 0x4U | 0x0U;  /* TIMER_1:  Priority 1 / Subpriority 0 */
     IPC28SET = 0x4000000U | 0x0U;  /* I2C1_BUS:  Priority 1 / Subpriority 0 */
     IPC29SET = 0x400U | 0x0U;  /* I2C1_MASTER:  Priority 1 / Subpriority 0 */
-    IPC47SET = 0x4U | 0x0U;  /* UART6_FAULT:  Priority 1 / Subpriority 0 */
-    IPC47SET = 0x400U | 0x0U;  /* UART6_RX:  Priority 1 / Subpriority 0 */
-    IPC47SET = 0x40000U | 0x0U;  /* UART6_TX:  Priority 1 / Subpriority 0 */
+    IPC31SET = 0x40000U | 0x0U;  /* CHANGE_NOTICE_J:  Priority 1 / Subpriority 0 */
+    IPC33SET = 0x40000U | 0x0U;  /* DMA0:  Priority 1 / Subpriority 0 */
 
 
 
