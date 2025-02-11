@@ -1,0 +1,8 @@
+DRC Rules Export File for PCB: C:\Users\c14466\Microchip Technology, Inc\MCU32 Applications - MCU32 HW\Sustaining\svn\Boards\16-07369\PCB Files\Rev 2.0\PCB Files\05-10912_R2.0.PcbDoc
+RuleKind=Clearance|RuleName=Clearance 7|Scope=Board|Minimum=7.00
+RuleKind=Clearance|RuleName=Top_GND 12|Scope=Board|Minimum=12.00
+RuleKind=Clearance|RuleName=Bot-GND 12|Scope=Board|Minimum=12.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=6.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=3.94
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=12.00

@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: C:\Users\c14466\Microchip Technology, Inc\MCU32 Applications - MCU32 HW\Sustaining\svn\Boards\16-07369\PCB Files\Rev 2.0\PCB Files\05-10912_R2.0.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=05-10912_r2.0-roundholes.txt|DrillLayers=gtl,gp1,gp2,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=05-10912_r2.0-slotholes.txt|DrillLayers=gtl,gp1,gp2,gbl
