@@ -79,14 +79,19 @@ bool UART6_Read( void *buffer, const size_t size );
 
 UART_ERROR UART6_ErrorGet( void );
 
-int UART6_ReadByte( void );
+bool UART6_ReadIsBusy( void );
 
-bool UART6_ReceiverIsReady( void );
+size_t UART6_ReadCountGet( void );
 
-void UART6_WriteByte( int data );
+bool UART6_ReadAbort(void);
 
-bool UART6_TransmitterIsReady( void );
+bool UART6_WriteIsBusy( void );
 
+size_t UART6_WriteCountGet( void );
+
+void UART6_WriteCallbackRegister( UART_CALLBACK callback, uintptr_t context );
+
+void UART6_ReadCallbackRegister( UART_CALLBACK callback, uintptr_t context );
 
 bool UART6_TransmitComplete( void );
 

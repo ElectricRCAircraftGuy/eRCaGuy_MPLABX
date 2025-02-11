@@ -69,8 +69,9 @@
 void TIMER_1_Handler (void);
 void I2C1_BUS_Handler (void);
 void I2C1_MASTER_Handler (void);
-void CHANGE_NOTICE_J_Handler (void);
-void DMA0_Handler (void);
+void UART6_FAULT_Handler (void);
+void UART6_RX_Handler (void);
+void UART6_TX_Handler (void);
 
 
 // *****************************************************************************
@@ -93,14 +94,19 @@ void __ISR(_I2C1_MASTER_VECTOR, ipl1SRS) I2C1_MASTER_Handler (void)
     I2C1_MASTER_InterruptHandler();
 }
 
-void __ISR(_CHANGE_NOTICE_J_VECTOR, ipl1SRS) CHANGE_NOTICE_J_Handler (void)
+void __ISR(_UART6_FAULT_VECTOR, ipl1SRS) UART6_FAULT_Handler (void)
 {
-    CHANGE_NOTICE_J_InterruptHandler();
+    UART6_FAULT_InterruptHandler();
 }
 
-void __ISR(_DMA0_VECTOR, ipl1SRS) DMA0_Handler (void)
+void __ISR(_UART6_RX_VECTOR, ipl1SRS) UART6_RX_Handler (void)
 {
-    DMA0_InterruptHandler();
+    UART6_RX_InterruptHandler();
+}
+
+void __ISR(_UART6_TX_VECTOR, ipl1SRS) UART6_TX_Handler (void)
+{
+    UART6_TX_InterruptHandler();
 }
 
 

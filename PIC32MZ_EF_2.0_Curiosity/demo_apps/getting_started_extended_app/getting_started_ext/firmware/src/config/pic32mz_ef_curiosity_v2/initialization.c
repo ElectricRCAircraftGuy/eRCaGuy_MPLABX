@@ -73,7 +73,7 @@
 /*** DEVCFG1 ***/
 #pragma config FNOSC =      SPLL
 #pragma config DMTINTV =    WIN_127_128
-#pragma config FSOSCEN =    ON
+#pragma config FSOSCEN =    OFF
 #pragma config IESO =       OFF
 #pragma config POSCMOD =    OFF
 #pragma config OSCIOFNC =   OFF
@@ -184,8 +184,6 @@ void SYS_Initialize ( void* data )
 	GPIO_Initialize();
 
     I2C1_Initialize();
-
-    DMAC_Initialize();
 
     TMR1_Initialize();
 
