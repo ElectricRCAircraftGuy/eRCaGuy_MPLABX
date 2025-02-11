@@ -21,3 +21,20 @@ Demo applications:
 1. Temp logger: EEPROM/Thumb drive Temperature Logger Application on Curiosity PIC32MZ EF 2.0 Development Board: https://github.com/Microchip-MPLAB-Harmony/reference_apps/releases/latest/download/getting_started_middleware.zip
 
 
+## GS instructions to open up a demo application
+
+1. Open MPLAB X IDE
+1. Open the demo application's `.X` folder as a project in MPLAB X IDE
+1. Prepare your local MCC Content Manager to be able to open a project in the MPLAB Code Configurator:
+    1. Click the blue "CM" shield icon to open the "MCC Content Manager". 
+    1. Click "Load Manifest" button. 
+    1. Navigate to the `harmony-manifest-success.yml` file at `eRCaGuy_MPLABX/PIC32MZ_EF_2.0_Curiosity/demo_apps/getting_started_extended_app/getting_started_ext/firmware/src/config/pic32mz_ef_curiosity_v2/harmony-manifest-success.yml`, or equivalent, and open it.
+    1. On the blue "Apply" button, click the dropdown. Review the changes, and click "Apply". 
+        1. This updates your locally-selected Harmony packages to be prepared to configure the project. 
+    1. Click the little X at the top-right of the "MCC Content Manager" tab to close the MCC Content Manager.  
+1. Open the MPLAB Code Configurator v5: Tools --> Embedded --> "MPLAB Code Configurator v5: Open/Close"
+    1. Some windows may open up, asking about fixing paths and stuff. Accept the new paths. Ex: from Windows paths using `\` to Linux paths using `/`. 
+    1. IT WORKS! YAAAY! It opens!
+    1. You'll now see this Project Graph tab: 
+        1. [![MPLAB_Code_Configurator_Project_Graph.jpg](GS_images/MPLAB_Code_Configurator_Project_Graph.jpg)](GS_images/MPLAB_Code_Configurator_Project_Graph.jpg)
+1. 
