@@ -6,6 +6,7 @@ Videos:
 
 Dev kit:
 1. https://www.microchip.com/en-us/development-tool/dm320209
+1. I/O1 Xplained Pro Extension Kit - https://www.microchip.com/Developmenttools/ProductDetails/ATIO1-XPRO
 1. "Design Documentation" zip file: IC32MZ_EF Curiosity Board 2.0 Design Documentation - https://ww1.microchip.com/downloads/aemDocuments/documents/MCU32/ProductDocuments/BoardDesignFiles/PIC32MZ_EF-Curiosity-Board-2.0.zip 
 
 
@@ -16,6 +17,7 @@ Other references:
 1. \*\*\*\*\*PIC32MZ2048EFM144 demo applications: https://mplab-discover.microchip.com/v2/category/com.microchip.code.examples/com.microchip.ide.project?dsl=PIC32MZ2048EFM144
 
 Demo applications:
+1. Getting started: Getting Started Extended Application on Curiosity PIC32MZ EF 2.0 Development Board: https://github.com/Microchip-MPLAB-Harmony/reference_apps/releases/latest/download/getting_started_ext.zip
 1. Temp logger: EEPROM/Thumb drive Temperature Logger Application on Curiosity PIC32MZ EF 2.0 Development Board: https://github.com/Microchip-MPLAB-Harmony/reference_apps/releases/latest/download/getting_started_middleware.zip
 
 
