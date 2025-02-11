@@ -37,4 +37,10 @@ Demo applications:
     1. IT WORKS! YAAAY! It opens!
     1. You'll now see this Project Graph tab: 
         1. [![MPLAB_Code_Configurator_Project_Graph.jpg](GS_images/MPLAB_Code_Configurator_Project_Graph.jpg)](GS_images/MPLAB_Code_Configurator_Project_Graph.jpg)
-1. 
+1. In the "Project Graph" tab, click the "Plugins" dropdown menu to configure other peripherals. 
+    1. _Tip:_ if you accidentally close the "Project Graph" tab, you can re-open it by going to Window --> "MPLAB Code Configurator v5" --> "Show All".
+1. When done, I think you're supposed to generate code as follows:
+    1. Go to the "Resource Management (MCC)" tab in the far top-left (near the normal "Projects" and "Files" tabs) --> go to the "Project Resources" tab --> click the "Generate" button.
+1. Close the MPLAB Code Configurator v5: Tools --> Embedded --> "MPLAB Code Configurator v5: Open/Close". 
+1. Done, I think. The tutorial video doesn't talk about nor show this really important step at all. The video tutorial is too superficial. 
+
