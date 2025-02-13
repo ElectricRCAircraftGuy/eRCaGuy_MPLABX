@@ -525,5 +525,70 @@
          <value>__ROOTVIEW</value>
       </entry>
    </tokenMap>
-   <generatedFileHashHistoryMap class="java.util.TreeMap"/>
+   <generatedFileHashHistoryMap class="java.util.TreeMap">
+      <entry>
+         <file>../src/config/default/definitions.h</file>
+         <hash>5b7e141a7ae471c6a94bc0731001dec949df3c831391821f3eaf5692295411ac</hash>
+      </entry>
+      <entry>
+         <file>../src/config/default/device.h</file>
+         <hash>10ec93c43a7b158a129ae05bd8f4a59ff5bcf3d0f3f062fdd64c374bc2d42099</hash>
+      </entry>
+      <entry>
+         <file>../src/config/default/exceptions.c</file>
+         <hash>265c985839caadb2fa9e8fc76e7bc3c160e31e9b2c96dc4006add33e5d7ee212</hash>
+      </entry>
+      <entry>
+         <file>../src/config/default/initialization.c</file>
+         <hash>e563837fcc61b208618dcde2ce3ecbfc60e1948dc168c1b3f318b394adecc6d9</hash>
+      </entry>
+      <entry>
+         <file>../src/config/default/interrupts.c</file>
+         <hash>15293fcc2450a1caa2944513770b31b5b0fb71918c31ec9a9c9b497b679b6f5f</hash>
+      </entry>
+      <entry>
+         <file>../src/config/default/interrupts.h</file>
+         <hash>759cce8ff415eadadd85a74232a5023d73e8859a4556ef4beb93c2cfd4b8d8ef</hash>
+      </entry>
+      <entry>
+         <file>../src/config/default/p32MX795F512L.ld</file>
+         <hash>89fc5aa4d5f2061d3a5608f4779c6c2743053e5c571025736c53d5ea1ffadef4</hash>
+      </entry>
+      <entry>
+         <file>../src/config/default/peripheral/clk/plib_clk.c</file>
+         <hash>8aa2e862bc4cd5eda4ad78d8b08142efcb089478f42106a2e1cb52b32b0dc768</hash>
+      </entry>
+      <entry>
+         <file>../src/config/default/peripheral/clk/plib_clk.h</file>
+         <hash>35384f2e13e59b7190bf77f6996baf3ea2377ec42df94979a6f793326def5255</hash>
+      </entry>
+      <entry>
+         <file>../src/config/default/peripheral/evic/plib_evic.c</file>
+         <hash>9f9cb61ef67a4372d7429db9b9f9455b755f7d52abd54faef78b7fac8aa49e53</hash>
+      </entry>
+      <entry>
+         <file>../src/config/default/peripheral/evic/plib_evic.h</file>
+         <hash>db5e3889a7644e7053a032c08f7767258021260cc857660fc0c8cb77f9d17182</hash>
+      </entry>
+      <entry>
+         <file>../src/config/default/peripheral/gpio/plib_gpio.c</file>
+         <hash>0c5110e8b8842b3ae63be13744ead5ff1478709ebf581c64f1aa251cafb2aa6f</hash>
+      </entry>
+      <entry>
+         <file>../src/config/default/peripheral/gpio/plib_gpio.h</file>
+         <hash>9478b2e79aa3c17424897d0630ebb0e4a75d3aa558390f084a289dded46a40c5</hash>
+      </entry>
+      <entry>
+         <file>../src/config/default/stdio/xc32_monitor.c</file>
+         <hash>858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a</hash>
+      </entry>
+      <entry>
+         <file>../src/config/default/toolchain_specifics.h</file>
+         <hash>b4de6e02e3e48c62f7ba233405ffdf6ef31bb971d1a7b49efa1676f45cabc1ac</hash>
+      </entry>
+      <entry>
+         <file>../src/main.c</file>
+         <hash>d3c233d419e6304bfacbafc18cc68c0f5c26e365f23b20ea40ccfac458f664c5</hash>
+      </entry>
+   </generatedFileHashHistoryMap>
 </config>
