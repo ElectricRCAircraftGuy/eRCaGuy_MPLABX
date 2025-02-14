@@ -27,5 +27,5 @@ qemu-pic32 -machine pic32mx7-max32 \
     -bios "binaries/chipKIT-Max32_bootloader.hex" \
     -kernel "gs_pic32mx7.X/dist/default/production/gs_pic32mx7.X.production.hex"
 
-#    -d instr \
-#    -D out.trace
+    # -d instr \
+    # -D output.trace

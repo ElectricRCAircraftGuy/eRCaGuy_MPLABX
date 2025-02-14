@@ -1,0 +1,12 @@
+
+GS
+14 Feb. 2025
+
+TODO
+
+Newest on BOTTOM. 
+
+Fri. 14 Feb. 2025
+[ ] get it to run in Qemu. No serial output yet. :(
+[ ] Add `-Wall -Wextra -Werror` build flags to both C and C++ for the project. 
+

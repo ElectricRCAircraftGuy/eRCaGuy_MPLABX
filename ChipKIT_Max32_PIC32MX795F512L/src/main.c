@@ -44,7 +44,8 @@ void setup()
 
 void loop()
 {
-    
+    const char str[] = ".";
+    UART1_Write((char*)str, sizeof(str));
 }
 
 int main ( void )
