@@ -80,5 +80,4 @@ My steps:
                     - Therefore, in "open drain" or "open collector" mode, the pin is a high-impedance, passive HIGH, and an active drive LOW.
                 
     1. Generate the code:
-        1. Click the "Generate" button at the top. 
-
+        1. "Resource Management (MCC)" tab at far top-left, next to "Projects" and "Files" tabs --> click the "Generate" button to auto-generate the code.

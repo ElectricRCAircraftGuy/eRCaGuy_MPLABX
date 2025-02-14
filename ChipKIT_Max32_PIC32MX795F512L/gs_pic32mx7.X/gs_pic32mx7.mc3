@@ -1044,7 +1044,7 @@
    <generatedFileHashHistoryMap class="java.util.TreeMap">
       <entry>
          <file>../src/config/default/definitions.h</file>
-         <hash>5b7e141a7ae471c6a94bc0731001dec949df3c831391821f3eaf5692295411ac</hash>
+         <hash>42e5d7ef62cd18bcf42c65e06297f6de31d363be6c1fcedab9bd025268d86e23</hash>
       </entry>
       <entry>
          <file>../src/config/default/device.h</file>
@@ -1056,15 +1056,15 @@
       </entry>
       <entry>
          <file>../src/config/default/initialization.c</file>
-         <hash>e563837fcc61b208618dcde2ce3ecbfc60e1948dc168c1b3f318b394adecc6d9</hash>
+         <hash>11e3213bcdb409b4835fd3a155bc53a51c5666a58d4e28d96a40151fc5ab124c</hash>
       </entry>
       <entry>
          <file>../src/config/default/interrupts.c</file>
-         <hash>15293fcc2450a1caa2944513770b31b5b0fb71918c31ec9a9c9b497b679b6f5f</hash>
+         <hash>f5d8a2dca828ca5c76e34df7b9e0c6690ece7d91fb2756282ee64888d0d5688b</hash>
       </entry>
       <entry>
          <file>../src/config/default/interrupts.h</file>
-         <hash>759cce8ff415eadadd85a74232a5023d73e8859a4556ef4beb93c2cfd4b8d8ef</hash>
+         <hash>2aca4f1e6687940f52f6c6c55a63406654fc029565a6c3a111a444f0525cf2b5</hash>
       </entry>
       <entry>
          <file>../src/config/default/p32MX795F512L.ld</file>
@@ -1080,7 +1080,7 @@
       </entry>
       <entry>
          <file>../src/config/default/peripheral/evic/plib_evic.c</file>
-         <hash>9f9cb61ef67a4372d7429db9b9f9455b755f7d52abd54faef78b7fac8aa49e53</hash>
+         <hash>ba8d8a8810c2eb0071eca69bb69f9e944d3bcada55e3876363a84de8c7c030ac</hash>
       </entry>
       <entry>
          <file>../src/config/default/peripheral/evic/plib_evic.h</file>
@@ -1093,6 +1093,18 @@
       <entry>
          <file>../src/config/default/peripheral/gpio/plib_gpio.h</file>
          <hash>9478b2e79aa3c17424897d0630ebb0e4a75d3aa558390f084a289dded46a40c5</hash>
+      </entry>
+      <entry>
+         <file>../src/config/default/peripheral/uart/plib_uart1.c</file>
+         <hash>6e7e6360c3ad19911bbf4987ce80b70dd005e29d2cb79afddfb083d1fe8a8589</hash>
+      </entry>
+      <entry>
+         <file>../src/config/default/peripheral/uart/plib_uart1.h</file>
+         <hash>62c3f14a2e0ca2d32060650d818a37b497288cedd9a4a1bed56ab6885c63be8c</hash>
+      </entry>
+      <entry>
+         <file>../src/config/default/peripheral/uart/plib_uart_common.h</file>
+         <hash>b87295faadae4157d5880e22970f89094f2b51e1866930040a90ba49c6b29797</hash>
       </entry>
       <entry>
          <file>../src/config/default/stdio/xc32_monitor.c</file>

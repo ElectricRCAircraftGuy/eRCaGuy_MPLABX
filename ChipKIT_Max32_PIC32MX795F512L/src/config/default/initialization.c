@@ -174,9 +174,13 @@ void SYS_Initialize ( void* data )
 
 	GPIO_Initialize();
 
+	UART1_Initialize();
+
 
     EVIC_Initialize();
 
+    /* Enable global interrupts */
+    (void)__builtin_enable_interrupts();
 
 
 
