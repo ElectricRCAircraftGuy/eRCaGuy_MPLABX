@@ -34,15 +34,32 @@
 // *****************************************************************************
 // *****************************************************************************
 
+void setup()
+{
+    printf("hello\n");
+
+    const char[] str = "world\n";
+    UART1_Write(str, sizeof(str));
+}
+
+void loop()
+{
+    
+}
+
 int main ( void )
 {
     /* Initialize all modules */
     SYS_Initialize ( NULL );
 
+    setup();
+
     while ( true )
     {
         /* Maintain state machines of all polled MPLAB Harmony modules. */
         SYS_Tasks ( );
+
+        loop();
     }
 
     /* Execution should not come here during normal operation */
