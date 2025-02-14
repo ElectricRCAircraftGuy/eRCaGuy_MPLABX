@@ -21,7 +21,8 @@ My steps:
     1. Click "Select Latest Versions", then Apply. 
     1. Close the MCC Content Manager.
 1. Open MCC and configure the project: 
-    1. Tools --> Embedded --> "MPLAB Code Configurator v5 Open/Close"
+    1. _Note: to see everything in the MCC, a large, 2k or 4k 32" monitor is recommended. The windowing layout isn't very friendly to lower-resolution monitors._ 
+    1. Tools --> Embedded --> "MPLAB Code Configurator v5: Open/Close"
     1. Add and configure the UART:
         1. "Resource Management (MCC)" tab at far top-left, next to "Projects" and "Files" tabs --> "Project Resources" tab --> "Device Resources" section underneath that --> Libraries -> Harmony -> Peripherals -> UART -> click the "+" next to UART1. 
         1. In the "Project Graph" tab, there is now a UART1 box/block. Select it. Resize the right-hand pane to show everything. Check your baud rate and settings. I left the defaults, with 115200 baud, 8 data bits, no parity, 1 stop bit, no parity. 
@@ -81,3 +82,6 @@ My steps:
                 
     1. Generate the code:
         1. "Resource Management (MCC)" tab at far top-left, next to "Projects" and "Files" tabs --> click the "Generate" button to auto-generate the code.
+1. Close MCC: 
+    1. "Tools" --> "Embedded" --> "MPLAB Code Configurator v5: Open/Close"
+    1. If it freezes (which happens a lot :(), type `xkill` in another terminal, then click the window to kill it. 
