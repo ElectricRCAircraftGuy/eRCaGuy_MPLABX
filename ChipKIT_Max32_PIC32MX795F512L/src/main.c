@@ -36,10 +36,10 @@
 
 void setup()
 {
-    printf("hello\n");
+    // printf("hello\n");
 
-    const char[] str = "world\n";
-    UART1_Write(str, sizeof(str));
+    const char str[] = "world\n";
+    UART1_Write((char*)str, sizeof(str));
 }
 
 void loop()
