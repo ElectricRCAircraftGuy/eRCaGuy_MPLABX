@@ -16,10 +16,10 @@ Note: useful prompt for GitHub Copilot:
 
 My steps: 
 
-1. Create new project. 
 1. Open "CM" "MCC Content Manager" and update to latest: 
     1. Click "Select Latest Versions", then Apply. 
     1. Close the MCC Content Manager.
+1. Create new project. 
 1. Open MCC and configure the project: 
     1. _Note: to see everything in the MCC, a large, 2k or 4k 32" monitor is recommended. The windowing layout isn't very friendly to lower-resolution monitors._ 
     1. Tools --> Embedded --> "MPLAB Code Configurator v5: Open/Close"
