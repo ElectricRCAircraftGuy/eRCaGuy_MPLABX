@@ -28,3 +28,4 @@ For more details, see also: [../ChipKIT_Max32_PIC32MX795F512L](../ChipKIT_Max32_
         1. Assign Pin 14, RG6, to U4TX.
     1. Generate the code.
 1. Close MCC: Tools --> Embedded --> "MPLAB Code Configurator v5: Open/Close"
+    1. It will probably freeze. Use `xkill` to kill it: type `xkill` in another terminal, then click the window to kill it. 
