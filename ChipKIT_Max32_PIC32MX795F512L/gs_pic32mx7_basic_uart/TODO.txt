@@ -10,3 +10,14 @@ Fri. 14 Feb. 2025
 [ ] get it to run in Qemu. No serial output yet. :(
 [ ] Add `-Wall -Wextra -Werror` build flags to both C and C++ for the project. 
 
+Tue. 18 Feb. 2025
+[ ] Investigate: why does Serge's code work, but not `UART1_Write()`?
+    I suspect there is some register not being handled/updated correctly by Qemu. Ex: a register indicating if the UART is ready to send data or something. Serge probably manually handled his `U1STA & PIC32_USTA_TRMT` check in his code, however. 
+[ ] debug the code in Qemu wth GDB. How? Is this possible? 
+[ ] Dig into the Qemu PIC32 source code by Serge: are some registers not implemented inside of Qemu? 
+[ ] add a `build_and_run.sh` script to auto-build the project using the MPLAB X IDE command-line tools, so I don't have to open the IDE to rapidly iterate by building and running in Qemu. 
+[ ] Investigate: what is the role of the bootloader (`binaries/chipKIT-Max32_bootloader.hex`) in this case, and why do we even need one? The bootloader typically chooses applications and allows firmware updates over serial or Ethernet, but we aren't doing that here. 
+    Update: I removed the bootloader from the `qemu-pic32` call in `run_qemu.sh` and it still works fine. Is this expected? Why?
+[ ] study, understand, and then clean up, replace, and/or remove Serge's functions: `mfc0()`, `udelay()`, `putch()`, `putstr()`.
+    For example: the `goto again` is bad practice. Never jump backwards with a `goto` (jumping forwards within the same function, to cleanup or end, is ok though). Use a loop instead. 
+

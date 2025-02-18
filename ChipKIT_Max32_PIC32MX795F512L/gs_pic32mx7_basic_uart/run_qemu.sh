@@ -11,6 +11,8 @@
 #    https://github.com/ElectricRCAircraftGuy/vak-opensource/tree/master/microcontrollers/pic32-max32
 # 1. https://github.com/sergev/qemu/issues/20#issuecomment-2641610865
 # 1. https://github.com/chipKIT32/chipKIT-digiboot/blob/master/BootloadersCurrent-hex/chipKIT-Max32.hex
+#
+# 1. My issue about this stuff: https://github.com/sergev/qemu/issues/21
 
 if [ ! -e "binaries/chipKIT-Max32_bootloader.hex" ]; then
     mkdir -p binaries
@@ -24,8 +26,8 @@ qemu-pic32 -machine pic32mx7-max32 \
     -nographic \
     -monitor none \
     -serial stdio \
-    -bios "binaries/chipKIT-Max32_bootloader.hex" \
     -kernel "gs_pic32mx7.X/dist/default/production/gs_pic32mx7.X.production.hex"
-
-    # -d instr \
+    # -bios "binaries/chipKIT-Max32_bootloader.hex" \
+    # -d op
     # -D output.trace
+
