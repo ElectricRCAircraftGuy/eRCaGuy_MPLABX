@@ -1,6 +1,11 @@
 {
     "C_Cpp.default.includePath": [
+        // Allow direct imports of header files rather than requiring relative or absolute paths. 
+        // Ex: `#include "definitions.h"` now works, rather than 
+        // `#include "config/default/definitions.h"`.
+        // "${workspaceFolder}/**",
         "/opt/microchip/xc32/v4.45/pic32mx/include/**",
+        "gs_pic32mx7_basic_uart/src/config/default",
     ],
     "files.associations": {
         "*.stm": "html",
@@ -15,6 +20,9 @@
         "stddef.h": "c",
         "plib_uart_common.h": "c",
         "device.h": "c",
-        "toolchain_specifics.h": "c"
+        "toolchain_specifics.h": "c",
+        "stdlib.h": "c",
+        "interrupts.h": "c",
+        "xc.h": "c"
     }
 }
