@@ -17,9 +17,9 @@
     },
 
     "C_Cpp.default.includePath": [
-        "${workspaceFolder}/**",
-        // "/opt/microchip/xc32/v1.42/pic32mx/include/**",
-        "/opt/microchip/xc32/v4.45/pic32mx/include/**",
+        // "${workspaceFolder}/**",
+        // "/opt/microchip/xc32/v1.42/pic32mx/include",
+        "/opt/microchip/xc32/v4.45/pic32mx/include",
         "pic32mx/include",
     ],
     "files.associations": {

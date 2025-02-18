@@ -4,7 +4,7 @@
         // Ex: `#include "definitions.h"` now works, rather than 
         // `#include "config/default/definitions.h"`.
         // "${workspaceFolder}/**",
-        "/opt/microchip/xc32/v4.45/pic32mx/include/**",
+        "/opt/microchip/xc32/v4.45/pic32mx/include",
         "gs_pic32mx7_basic_uart/src/config/default",
     ],
     "files.associations": {
@@ -23,6 +23,18 @@
         "toolchain_specifics.h": "c",
         "stdlib.h": "c",
         "interrupts.h": "c",
-        "xc.h": "c"
+        "xc.h": "c",
+        "p32mk0512gpe064.h": "c",
+        "p32mk0512gpd100.h": "c",
+        "p32mk0256gpg048.h": "c",
+        "pmtch6303.h": "c",
+        "pmec1404.h": "c",
+        "pmec1406.h": "c",
+        "pmec1408.h": "c",
+        "pmec1414.h": "c",
+        "pmec1416.h": "c",
+        "pmec1418.h": "c",
+        "pmec1428.h": "c",
+        "pmgc3140.h": "c"
     }
 }
