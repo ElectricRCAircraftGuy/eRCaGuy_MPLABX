@@ -1,4 +1,15 @@
 {
+    "C_Cpp.default.defines": [
+        // "GS_TEST=1",
+        // "__cplusplus",
+        // "__PIC32MZ__",
+        // "__32MZ2048EFM144__",
+        // "__LANGUAGE_ASSEMBLY__",
+        "__LANGUAGE_C__",
+        // "__LANGUAGE_C_PLUS_PLUS",
+        // "__DEBUG",
+        "__PIC32MX795F512L__",
+    ],
     "C_Cpp.default.includePath": [
         // Allow direct imports of header files rather than requiring relative or absolute paths. 
         // Ex: `#include "definitions.h"` now works, rather than 
@@ -35,6 +46,10 @@
         "pmec1416.h": "c",
         "pmec1418.h": "c",
         "pmec1428.h": "c",
-        "pmgc3140.h": "c"
+        "pmgc3140.h": "c",
+        "p32mk0256gpg064.h": "c",
+        "p32mx675f512l.h": "c",
+        "p32mz1025daa176.h": "c",
+        "p32mx795f512l.h": "c"
     }
 }
