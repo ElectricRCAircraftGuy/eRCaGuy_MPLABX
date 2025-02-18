@@ -1,0 +1,20 @@
+{
+    "C_Cpp.default.includePath": [
+        "/opt/microchip/xc32/v4.45/pic32mx/include/**",
+    ],
+    "files.associations": {
+        "*.stm": "html",
+        "*.desktop": "shellscript",
+        "definitions.h": "c",
+        "stdint.h": "c",
+        "stdbool.h": "c",
+        "plib_uart1.h": "c",
+        "plib_clk.h": "c",
+        "plib_gpio.h": "c",
+        "plib_evic.h": "c",
+        "stddef.h": "c",
+        "plib_uart_common.h": "c",
+        "device.h": "c",
+        "toolchain_specifics.h": "c"
+    }
+}

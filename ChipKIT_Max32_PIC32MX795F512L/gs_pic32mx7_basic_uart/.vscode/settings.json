@@ -1,8 +1,0 @@
-{
-    "files.associations": {
-        "*.stm": "html",
-        "*.desktop": "shellscript",
-        "definitions.h": "c",
-        "plib_uart1.h": "c"
-    }
-}
