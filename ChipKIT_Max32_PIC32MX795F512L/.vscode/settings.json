@@ -8,15 +8,37 @@
         "__LANGUAGE_C__",
         // "__LANGUAGE_C_PLUS_PLUS",
         // "__DEBUG",
+        "__32MX795F512L__",
         "__PIC32MX795F512L__",
     ],
     "C_Cpp.default.includePath": [
+        // GS notes: add `-v` to the `gcc` compiler command to see the include paths used during
+        // compilation. Look for the following lines in the gcc build output:
+        // ```
+        // #include "..." search starts here:
+        // #include <...> search starts here:
+        // ```
+        // - Then, find those paths, process them with `realpath "<path>"` to get the absolute path,
+        //   and add them as an `includePath` below.
+        "gs_pic32mx7_basic_uart/src",
+        "gs_pic32mx7_basic_uart/src/config/default",
+        "/opt/microchip/mplabx/v6.20/packs/Microchip/PIC32MX_DFP/1.5.259/include",
+        "/opt/microchip/xc32/v4.45/pic32mx/include",
+        "/opt/microchip/xc32/v4.45/pic32mx/include/musl",
+        "/opt/microchip/xc32/v4.45/lib/gcc/pic32mx/8.3.1/include",
+        "/opt/microchip/xc32/v4.45/pic32mx/include/pic32m-libs",
+
         // Allow direct imports of header files rather than requiring relative or absolute paths. 
         // Ex: `#include "definitions.h"` now works, rather than 
         // `#include "config/default/definitions.h"`.
         // "${workspaceFolder}/**",
-        "/opt/microchip/xc32/v4.45/pic32mx/include",
-        "gs_pic32mx7_basic_uart/src/config/default",
+        // "gs_pic32mx7_basic_uart/src/config/default",
+        
+        // For `#include <xc.h>`; ex: in "gs_pic32mx7_basic_uart/src/config/default/device.h"
+        // "/opt/microchip/xc32/v4.45/pic32mx/include",
+        
+        // For `#include <sys/attribs.h>`
+        // "/opt/microchip/xc32/v4.45/pic32mx/include/pic32m-libs",
     ],
     "files.associations": {
         "*.stm": "html",
@@ -50,6 +72,13 @@
         "p32mk0256gpg064.h": "c",
         "p32mx675f512l.h": "c",
         "p32mz1025daa176.h": "c",
-        "p32mx795f512l.h": "c"
+        "p32mx795f512l.h": "c",
+        "attribs.h": "c",
+        "types.h": "c",
+        "xc-pic32m.h": "c",
+        "p32mx795f512h.h": "c",
+        "p32mx775f512l.h": "c",
+        "p32mxgeneric.h": "c",
+        "stdio.h": "c"
     }
 }

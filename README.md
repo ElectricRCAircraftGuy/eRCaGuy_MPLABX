@@ -1,3 +1,9 @@
+This file is part of eRCaGuy_MPLABX: https://github.com/ElectricRCAircraftGuy/eRCaGuy_MPLABX
+
+
+# See also
+
+1. [vscode_settings_includes_for_indexing_PIC32_projects.md](vscode_settings_includes_for_indexing_PIC32_projects.md) - How to set up VSCode to index and search the Microchip XC32 compiler's include files.
 
 
 # References
