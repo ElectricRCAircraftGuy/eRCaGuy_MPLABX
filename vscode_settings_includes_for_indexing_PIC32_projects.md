@@ -1,7 +1,19 @@
 This file is part of eRCaGuy_MPLABX: https://github.com/ElectricRCAircraftGuy/eRCaGuy_MPLABX
 
 
-# How to set up VSCode to index and search the Microchip XC32 compiler's include files.
+# How to set up VSCode to index and search the Microchip XC32 compiler's include files
+
+
+# Quick summary
+
+1. Add the `-v` flag to the compiler command-line to get verbose output. 
+1. Build the project.
+1. Find the include paths in the build output by searching for `#include`, which now show up because of `-v` above. 
+1. Use `realpath` on all of the include paths to get a fixed-up path to each one. 
+1. Add those paths to the `.vscode/settings.json` file in the `"C_Cpp.default.includePath"` list.
+
+
+# Details
 
 This process works for *any* gcc or clang-based compiler project, not just Microchip's XC32 compiler.
 
